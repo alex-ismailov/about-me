@@ -12,45 +12,64 @@
   <title>Alex Smile</title>
 </head>
 <body>
-  
-  <section class="greeting">
-    <div class="greeting__part1">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="greeting__content">
-              <p class="greeting__greet pb-2">Hello, I'm</p>
-              <h1 class="greeting__my-name pb-1">Alex Ismailov</h1>
-              <div class="greeting__divider"></div>
-              <p class="greeting__profession">I am a frontend developer</p>
-              <div class="row">
-                <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2">
-                  <a class="greeting__button" href="#">read more</a>
-                </div>
-                <div class="col-6 col-sm-5 col-md-4 col-lg-3">
-                  <a class="greeting__button" href="#">download cv</a>
-                </div>
-              </div>
-                <!-- <ul class="greeting__buttons-list">
-                  <li class="greeting__button-wrapper">
-                    <a class="greeting__button" href="#">read more</a>
-                  </li>
-                  <li class="greeting__button-wrapper">
-                    <a class="greeting__button" href="#">download cv</a>
-                  </li>
-                </ul> -->
-            </div>
-          </div>
-          <!-- <div class="col-7">
-            <div class="greeting__my-face-bg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quaerat atque voluptates fugiat! Iusto, rem doloribus? Perferendis excepturi necessitatibus autem aut cupiditate error eius enim inventore. Unde, architecto eius?</div>
-          </div> -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+        </div>
+        <div class="col-7">
+          <nav>
+            <ul class="header__menu">
+              <li class="header__menu-item header__menu-item-active">HOME</li>
+              <li class="header__menu-item">MY WORK</li>
+              <li class="header__menu-item">EDUCATION</li>
+              <li class="header__menu-item">CONTACT</li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
-    <div class="greeting__part2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ut veniam, ad veritatis adipisci beatae animi dolor alias dicta doloribus?</div>
-    <div class="greeting__part3"></div>
-  </section>
-  <section class=""></section>
+  </header>
+  <main>
+    <section class="greeting">
+      <div class="greeting__part1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="greeting__content">
+                <p class="greeting__greet pb-2">Hello, I'm</p>
+                <h1 class="greeting__my-name pb-1">Alex Ismailov</h1>
+                <div class="greeting__divider"></div>
+                <p class="greeting__profession">I am a frontend developer</p>
+                <div class="row">
+                  <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                    <a class="greeting__button" href="#">read more</a>
+                  </div>
+                  <div class="col-6 col-sm-5 col-md-4 col-lg-3">
+                    <a class="greeting__button" href="#">download cv</a>
+                  </div>
+                </div>
+                  <!-- <ul class="greeting__buttons-list">
+                    <li class="greeting__button-wrapper">
+                      <a class="greeting__button" href="#">read more</a>
+                    </li>
+                    <li class="greeting__button-wrapper">
+                      <a class="greeting__button" href="#">download cv</a>
+                    </li>
+                  </ul> -->
+              </div>
+            </div>
+            <!-- <div class="col-7">
+              <div class="greeting__my-face-bg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum in quaerat atque voluptates fugiat! Iusto, rem doloribus? Perferendis excepturi necessitatibus autem aut cupiditate error eius enim inventore. Unde, architecto eius?</div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="greeting__part2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ut veniam, ad veritatis adipisci beatae animi dolor alias dicta doloribus?</div>
+      <div class="greeting__part3"></div>
+    </section>
+    <section class=""></section>
+  </main>
 
   <% for (index in htmlWebpackPlugin.files.js) { %>
     <script src="<%= htmlWebpackPlugin.files.js[index] %>" type="text/javascript"></script>
