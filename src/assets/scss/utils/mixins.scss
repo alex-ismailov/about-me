@@ -1,3 +1,10 @@
+// breakpoints
+@mixin media($breakpoint: 'smDesktopWidth') {
+  @media screen and (max-width: map-get($breakpoints, '#{$breakpoint}')) {
+    @content;
+  }
+}
+
 // px to rem
 @function rem($pixels, $context: $mainFontSize) {
   @if (unitless($pixels)) {
