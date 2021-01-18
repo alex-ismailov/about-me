@@ -1,0 +1,12 @@
+.mobile-menu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  padding: 0 15px;
+  background: #fff;
+
+  @include media('tableWidth') {
+    display: block;
+    // opacity: 0.7;
+  }
+}
