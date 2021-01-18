@@ -1,10 +1,14 @@
 .header {
   height: 80px;
   display: flex;
-  align-items: center;
+  // align-items: center;
   position: absolute;
   width: 100%;
   z-index: 111;
+
+  @include media('tableWidth') {
+    display: none;
+  }
 
   &__menu {
     display: flex;
