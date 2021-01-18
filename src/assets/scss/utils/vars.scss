@@ -20,6 +20,14 @@ $tableWidth              : 768px;
 $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
 
+$breakpoints: (
+  desktopWidth            : 1199px,
+  smDesktopWidth          : 991px,
+  tableWidth              : 767px,
+  phoneWidth              : 575px,
+  smPhoneWidth            : 320px,
+);
+
 // Main color
 $default-color           : #ffffff;
 $primary-color           : #444ce0;
