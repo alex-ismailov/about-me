@@ -3,13 +3,16 @@
   // height: 790px;
 
   &__part1 {
-    background: //linear-gradient(10deg, #8300e9 27%, transparent 27.1%),
-              linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
-              // linear-gradient(225deg, transparent 50%, #8300e9 50%),
-              // 80% / contain url('../../assets/img/konduki-my-face-HD-740-1007.png') no-repeat,
-              no-repeat 80%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
-              linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
+    background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
+                no-repeat 80%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+                linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     height: 70%;
+
+    @include media('tableWidth') {
+      background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
+                  no-repeat 50%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+                  linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
+    }
   }
 
   &__part2 {
