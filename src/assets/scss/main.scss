@@ -8,3 +8,12 @@
 @import "modules/header.scss";
 @import "modules/greeting.scss";
 
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: $mainFontColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
