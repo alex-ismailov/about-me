@@ -8,7 +8,7 @@
                 linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     height: 70%;
 
-    @include media('tableWidth') {
+    @include media('smDesktopWidth') {
       background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
                   no-repeat 50%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
                   linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
