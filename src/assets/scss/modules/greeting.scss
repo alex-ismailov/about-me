@@ -4,38 +4,28 @@
 
   &__part1 {
     background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
-                no-repeat 80%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+                no-repeat 50%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
                 linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     height: 70%;
 
-    @include media('smDesktopWidth') {
+    @include media-breakpoint-up(md) {
       background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
-      no-repeat 70%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
-      linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
+                  no-repeat 70%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+                  linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     }
 
-    @include media('tableWidth') {
+    @include media-breakpoint-up(lg) {
       background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
-                  no-repeat 60%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+                  no-repeat 80%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
                   linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
-
-      font-size: 12px;
     }
   }
 
   &__content {
-    // position: absolute;
-    // bottom: 150%;
-    // bottom: 150px;
-    // width: 450px;
-    margin-top: 8%;
+    margin-top: 18%;
 
-    @include media('tableWidth') {
+    @include media-breakpoint-up(md) {
       margin-top: 15%;
-    }
-
-    @include media('smPhoneWidth') {
-      margin-top: 18%;
     }
   }
 
@@ -45,27 +35,34 @@
     margin: 0;
 
     @include media('tableWidth') {
+      font-size: 14px;
+    }
+
+    @include media('phoneWidth') {
       font-size: 12px;
     }
   }
 
   &__my-name {
     display: flex;
+    flex-direction: column;
     justify-content: start;
-    font-size: 48px;
+    font-size: 24px;
     color: #4f565b;
     margin: 0;
-
-    @include media('tableWidth') {
-      font-size: 24px;
-    }
 
     & > span {
       padding-right: 15px;
     }
+    
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      font-size: 35px;
+    }
 
-    @include media('smDesktopWidth') {
-      flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      
+      font-size: 48px;
     }
   }
 
@@ -74,54 +71,54 @@
     height: 4px;
     margin-bottom: 15px;
     border-radius: 4px;
-    width: 20%;
+    width: 58px;
+    
+    @include media-breakpoint-up(sm) {
+      width: 58px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 75px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 103px;
+    }
   }
 
   &__profession {
     display: flex;
+    flex-direction: column;
     justify-content: start;
     font-weight: 300;
-    font-size: 34px;
+    font-size: 17px;
     color: rgba(104,109,114,0.45);
     
     & > span {
-      padding-right: 13px;
+      padding-right: 7px;
     }
 
-    @include media('tableWidth') {
-      font-size: 17px;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      font-size: 20px;
     }
 
-    @include media('smDesktopWidth') {
-      flex-direction: column;
+    @include media-breakpoint-up(lg) {
+      font-size: 34px;
     }
   }
-
-  // &__buttons-list {
-  //   display: flex;
-  //   // background: orange;
-  //   justify-content: start;
-  //   justify-content: space-between;
-  //   padding: 0;
-  //   margin: 0;
-  //   width: 65%;
-  //   // margin: 15px 0 0 0;
-  //   list-style: outside none;
-  // }
 
   &__buttons-wrapper {
     // width: 53%;
     display: flex;
     // justify-content: space-between;
-    justify-content: start;
+    // justify-content: start;
 
-    @include media('tableWidth') {
-      flex-direction: column;
-    }
+    // @include media('tableWidth') {
+    //   flex-direction: column;
+    // }
 
-    @include media('smDesktopWidth') {
-      display: none;
-    }
+    // @include media('smDesktopWidth') {
+    //   display: none;
+    // }
   }
 
   &__button {
