@@ -8,22 +8,11 @@
                 linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     height: 70%;
 
-    @include media('smDesktopWidth') {
+    @include media('tableWidth') {
       background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
                   no-repeat 50%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
                   linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     }
-  }
-
-  &__part2 {
-    background: $darkGrey;
-    height: 20%;
-  }
-
-  &__part3 {
-    // background: orange;
-    background: linear-gradient(to top left, #fff 45%, $darkGrey 45.9%);
-    height: 10%;
   }
 
   &__content {
@@ -41,9 +30,19 @@
   }
 
   &__my-name {
+    display: flex;
+    justify-content: start;
     font-size: 48px;
     color: #4f565b;
     margin: 0;
+
+    & > span {
+      padding-right: 15px;
+    }
+
+    @include media('smDesktopWidth') {
+      flex-direction: column;
+    }
   }
 
   &__divider {
@@ -55,27 +54,42 @@
   }
 
   &__profession {
+    display: flex;
+    justify-content: start;
     font-weight: 300;
     font-size: 34px;
-    color: rgba(104,109,114,0.45)
+    color: rgba(104,109,114,0.45);
+    
+    & > span {
+      padding-right: 13px;
+    }
+
+    @include media('smDesktopWidth') {
+      flex-direction: column;
+    }
   }
 
-  &__buttons-list {
-    display: flex;
-    // background: orange;
-    justify-content: start;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    width: 65%;
-    // margin: 15px 0 0 0;
-    list-style: outside none;
-  }
-
-  // &__button-wrapper {
-  //   list-style-type: none;
-  //   // padding-left: 15px;
+  // &__buttons-list {
+  //   display: flex;
+  //   // background: orange;
+  //   justify-content: start;
+  //   justify-content: space-between;
+  //   padding: 0;
+  //   margin: 0;
+  //   width: 65%;
+  //   // margin: 15px 0 0 0;
+  //   list-style: outside none;
   // }
+
+  &__buttons-wrapper {
+    width: 53%;
+    display: flex;
+    justify-content: space-between;
+
+    @include media('smDesktopWidth') {
+      flex-direction: column;
+    }
+  }
 
   &__button {
     display: block;
@@ -100,5 +114,14 @@
     box-shadow: 1px 15px 35px -10px rgba(0,0,0,0.4);
   }
 
+  &__part2 {
+    background: $darkGrey;
+    height: 20%;
+  }
 
+  &__part3 {
+    // background: orange;
+    background: linear-gradient(to top left, #fff 45%, $darkGrey 45.9%);
+    height: 10%;
+  }
 }
