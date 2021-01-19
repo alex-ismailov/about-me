@@ -8,10 +8,18 @@
                 linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
     height: 70%;
 
+    @include media('smDesktopWidth') {
+      background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
+      no-repeat 70%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+      linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
+    }
+
     @include media('tableWidth') {
       background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
-                  no-repeat 50%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
+                  no-repeat 60%/contain url('../../assets/img/konduki-my-face-HD-853-1279.png'),
                   linear-gradient(to bottom left, $grey 45%, transparent 45.1%);
+
+      font-size: 12px;
     }
   }
 
@@ -20,13 +28,25 @@
     // bottom: 150%;
     // bottom: 150px;
     // width: 450px;
-    margin-top: 10%;
+    margin-top: 8%;
+
+    @include media('tableWidth') {
+      margin-top: 15%;
+    }
+
+    @include media('smPhoneWidth') {
+      margin-top: 18%;
+    }
   }
 
   &__greet {
     color: rgba(104,109,114,0.50);
     font-size: 24px;
     margin: 0;
+
+    @include media('tableWidth') {
+      font-size: 12px;
+    }
   }
 
   &__my-name {
@@ -35,6 +55,10 @@
     font-size: 48px;
     color: #4f565b;
     margin: 0;
+
+    @include media('tableWidth') {
+      font-size: 24px;
+    }
 
     & > span {
       padding-right: 15px;
@@ -64,6 +88,10 @@
       padding-right: 13px;
     }
 
+    @include media('tableWidth') {
+      font-size: 17px;
+    }
+
     @include media('smDesktopWidth') {
       flex-direction: column;
     }
@@ -82,17 +110,20 @@
   // }
 
   &__buttons-wrapper {
-    width: 53%;
+    // width: 53%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: start;
 
-    @include media('smDesktopWidth') {
+    @include media('tableWidth') {
       flex-direction: column;
     }
   }
 
   &__button {
     display: block;
+    width: 200px;
+    margin-right: 15px;
     text-decoration: none;
     text-align: center;
     color: #ffffff;
@@ -105,6 +136,12 @@
     text-transform: uppercase;
     background-image: linear-gradient(160deg,#8300e9 0%,#00e2db 100%);
     transition: all 300ms ease 0ms;
+
+    @include media('tableWidth') {
+      width: 150px;
+      font-size: 10px;
+      margin-top: 10px;
+    }
   }
 
   &__button:hover {
