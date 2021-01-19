@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <% for (css in htmlWebpackPlugin.files.css) { %>
-    <link 
-    href="<%= htmlWebpackPlugin.files.css[css] %>"
-    rel="stylesheet">
-  <% } %>
-  <title>Alex Smile</title>
+    <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+      <title>Alex Smile</title>
 </head>
+
 <body>
   <div class="mobile-menu">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Alis</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -88,7 +89,22 @@
           </div>
         </div>
       </div>
-      <div class="greeting__part2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim ut veniam, ad veritatis adipisci beatae animi dolor alias dicta doloribus?</div>
+      <div class="greeting__part2">
+        <div class="container">
+          <div class="greeting__quote">
+            <span class="greeting__quote-sign"><i class="fas fa-quote-right"></i></span>
+            <blockquote>
+              <p class="greeting__quote-text">
+                What a computer is to me is the most remarkable tool that we have ever come up with.
+                <br>
+                It's the equivalent of a bicycle for our minds.
+                <br>
+                <span class="greeting__quote-author">Steve jobs</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
       <div class="greeting__part3"></div>
     </section>
     <section class=""></section>
@@ -96,6 +112,7 @@
 
   <% for (index in htmlWebpackPlugin.files.js) { %>
     <script src="<%= htmlWebpackPlugin.files.js[index] %>" type="text/javascript"></script>
-  <% } %>
+    <% } %>
 </body>
+
 </html>
