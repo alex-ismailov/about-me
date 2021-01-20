@@ -46,7 +46,7 @@
           <nav>
             <ul class="header__menu">
               <li class="header__menu-item header__menu-item-active">HOME</li>
-              <li class="header__menu-item">MY WORK</li>
+              <li class="header__menu-item">MY PROJECTS</li>
               <li class="header__menu-item">EDUCATION</li>
               <li class="header__menu-item">CONTACT</li>
             </ul>
@@ -106,7 +106,33 @@
       </div>
       <div class="greeting__part3"></div>
     </section>
-    <section class=""></section>
+    <section class="my-work">
+      <div class="section-title">
+        <p class="section-title__small-head">Portfolio</p>
+        <h2 class="section-title__head">Recent projects</h2>
+        <div class="section-title__divider"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="my-work__card-wrapper">
+            <article class="my-work__card">
+              <div class="my-work__img-container">
+                <img class="my-work__card-img" src="/assets/img/brain-game-logo.png" alt="diff-img.png">
+              </div>
+              <h3 class="my-work__card-title">card title</h3>
+              <p class="my-work__card-description">card title Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius harum voluptatum laudantium impedit natus.</p>
+            </article>
+            <article class="my-work__card">
+              <div class="my-work__img-container">
+                <img class="my-work__card-img" src="/assets/img/diff-img.png" alt="diff-img.png">
+              </div>
+              <h3 class="my-work__card-title">card title</h3>
+              <p class="my-work__card-description">card title Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eius harum voluptatum laudantium impedit natus.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <% for (index in htmlWebpackPlugin.files.js) { %>
