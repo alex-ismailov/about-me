@@ -1,6 +1,5 @@
 .greeting {
   height: 100vh;
-  // height: 790px;
 
   &__part1 {
     background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
@@ -65,7 +64,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-      
       font-size: 48px;
     }
   }
@@ -111,29 +109,16 @@
   }
 
   &__buttons-wrapper {
-    // width: 53%;
     display: flex;
     flex-direction: column;
 
     @include media-breakpoint-up(lg) {
       flex-direction: row;
     }
-    // justify-content: space-between;
-    // justify-content: start;
-
-    // @include media('tableWidth') {
-    //   flex-direction: column;
-    // }
-
-    // @include media('smDesktopWidth') {
-    //   display: none;
-    // }
   }
 
-  // ПРодолжить с этого модуля <==================
   &__button {
     display: block;
-    // width: 200px;
     width: fit-content;
     margin-top: 10px;
     margin-right: 15px;
@@ -142,9 +127,7 @@
     color: #ffffff;
     border-radius: 5px;
     letter-spacing: 2px;
-    // font-size: 15px;
     font-size: 10px;
-    // padding: 10px 20px;
     padding: 5px 10px;
     line-height: 23px;
     font-family: 'Montserrat', sans-serif;
@@ -161,12 +144,6 @@
       font-size: 15px;
       padding: 10px 20px;
     }
-
-    // @include media('tableWidth') {
-    //   width: 150px;
-    //   font-size: 10px;
-    //   margin-top: 10px;
-    // }
   }
 
   &__button:hover {
