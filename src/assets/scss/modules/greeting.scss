@@ -1,5 +1,6 @@
 .greeting {
   height: 100vh;
+  // padding-bottom: 300px;
 
   &__part1 {
     background: linear-gradient(4deg, $darkGrey 16%, transparent 16.3%),
@@ -34,15 +35,15 @@
 
   &__greet {
     color: rgba(104,109,114,0.50);
-    font-size: 24px;
+    font-size: 12px;
     margin: 0;
-
-    @include media('tableWidth') {
+    
+    @include media-breakpoint-up(md) {
       font-size: 14px;
     }
 
-    @include media('phoneWidth') {
-      font-size: 12px;
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
     }
   }
 
